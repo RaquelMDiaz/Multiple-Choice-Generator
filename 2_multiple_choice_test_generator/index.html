@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8" />
+		<title>Index</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<h1>Multiple Choice Test Generator</h1>
+		<p>This application will allow you to create, edit and delete multiple choice tests and store them in the related data base.</p>
+		<p>Follow the instructions as to how to complete the different input fields. Remember that it is not possible to store tests 
+		that do not contain a name or at least one question. Likewise, it is not possible to input the same question twice in the same test.</p>
+		<br/>
+		<select name="tests_box" id="tests_box" class="">
+			<option id="default">Please select a test</option>
+		</select>
+		<br/><br/>
+		<div id="index_page_buttons">	
+			<a href="http://localhost/raquel/html/create_test.html"><button id="create_test_button" class="">Add Test</button></a>
+			<button id="delete_test_button">Delete Test</button>
+			<button id="edit_test_button">Edit Test</button>
+		</div>
+		<br/>
+		<footer>
+			<p>Term Project - Summer Semester 2014 - Raquel Diaz</p>
+		</footer>
+	</body>
+</html>

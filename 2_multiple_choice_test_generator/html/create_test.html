@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Create Test</title>
+		<link type="text/css" rel="stylesheet" href="../css/style.css" />
+		<script src="../js/jquery-2.1.1.js"></script>
+		<script src="../js/functions_library.js"></script>  
+		<script src="../js/create_test.js"></script>
+	</head>
+	<body>
+		<h1 class = "">Multiple Choice Test Generator</h1>
+		<p>In this section you will be able to generate sets of questions, evaluate them and save them in a test. As you click on 
+		<strong>Add Question</strong>, the question sets generated will be displayed at the bottom of the page. Once you have all 
+		the questions you want, you can save the test under a specific name. This test will be stored in the data base.</p>
+		<p>Complete the following input fields according to the instructions provided.</p>
+		<form name="test_generator" id="test_generator">
+			<label for="test_question" class="">Type in a question</label>
+			<input type="text" name="test_question" id = "test_question" class="" size="40" />
+			<br/><br/>
+			<label for="correct_question" class="">Type in the correct answer</label>
+			<input type="text" name="correct_question" id= "correct_question" class="" size="40" />
+			<br/><br/>
+			<label for="incorrect_question1" class="">Type in the first incorrect answer</label>
+			<input type="text" name="incorrect_question1" id= "incorrect_question1" class=""size="40" />
+			<br/><br/>
+			<label for="incorrect_question2" class="">Type in the second incorrect answer</label>
+			<input type="text" name="incorrect_question2" id= "incorrect_question2" class="" size="40" />
+			<br/><br/>
+			<label for="incorrect_question3" class="">Type in the third incorrect answer</label>
+			<input type="text" name="incorrect_question3" id = "incorrect_question3" class="" size="40" />
+			<br/><br/>
+			<input type="submit" name="add_question_set" id="add_question_set" class="" value="Add Question Set" />
+		</form>
+		<h2 class="">Display Your Question Sets</h2>
+		<form name="display_section" id="display_section">
+			<label for="test_name" class="">Name Your Test</label>
+			<input type="text" name="test_name" id="test_name"  class ="" size="40" />
+			<br/><br/>
+			<div id="display_questions_sets"></div>
+			<input type="submit" name="evaluate_test" id="evaluate_test" class="" value="Evaluate Test" />
+			<input type="submit" name="reset_test" id="reset_test" class="" value="Reset Test" />
+			<input type="submit" name="save_test" id="save_test" class="" value="Save Test" />
+		</form>
+		<br/>
+		<div id="score_section"></div>
+		<footer>
+			<p>Term Project - Summer Semester 2014 - Raquel Diaz</p>
+		</footer>
+	</body>
+</html>

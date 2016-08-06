@@ -1,0 +1,61 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12pt;
+	position:absolute;
+	top:0px;
+	left:200px;
+	width: 800px;
+	border-width:5px;	
+	border-style:inset;
+}
+
+h1{
+	font: 150%;
+	color: #787878 ;
+}
+
+h2 {
+	color: #787878;
+}
+
+.error {
+	color: red;
+	font-size: 9pt;
+	text-align: left;
+}
+
+#delete_test_button,#edit_test_button {
+	display: none;
+}
+.my_edit_overlay {
+	/* General properties: */
+	/* - Hidden when the page is first displayed */
+	display: none;
+	/* - Displayed on top of the other page elements */
+	z-index: 10000;
+	/* - Fixed position */
+	position: fixed;
+	top: 150px;
+	left: 150px;
+	/* Appearance: */
+	background-color: #E8E8E8;
+	font-size: 12pt;
+	overflow-y: auto;
+	width: 600px;
+	height: 600px;
+	padding: 5px;
+	border-width:5px;	
+	border-style:inset;
+	-moz-box-shadow: 0 0 40px 5px #000000;
+	box-shadow: 0 0 40px 5px #000000;
+	-webkit-box-shadow: 0 0 40px 5px #000000;
+}
+
+.edit_question{
+	display: none;
+}
+
+footer {
+	font-size: 9pt;
+	text-align: center;
+}
